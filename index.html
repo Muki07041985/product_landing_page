@@ -1,0 +1,82 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/custom-style.css">
+
+<style>
+@media only screen and (max-width: 600px) {
+body {
+  background-color: lightblue;
+}
+
+}
+
+.flex-container {
+display: flex;
+justify-content: center;
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+  <header id="header">
+    <center>
+    <img id="header-img" src="https://www.ancestralsupplements.com/images/Web_Logo.png"/>
+    <nav id="nav-bar">
+      <a class="nav-link" href="#learn-more">Learn More</a>
+      <a class="nav-link" href="#Request Coupon">Request Coupon</a>
+      <a class="nav-link" href="#buy-on-amazon">Buy at online store</a>
+    </nav>
+  </center>
+  </header>
+
+  <section id="learn-more">
+    <center>
+    <h1>Elite supplements for Apex predators</h1>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/vJqstVAeTnU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+  </section>
+
+  <section id="Request Coupon">
+    <center>
+      <h2>Request a cuopon</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" placeholder="enter your email..." name="email"></input>
+      <input id="submit" type="submit"></input>
+    </center>
+
+    </form>
+  </section>
+
+  <section id="buy-on-amazon">
+    <div class="flex-container">
+       <div><a href="https://shop.ancestralsupplements.com/" target="_blank">Buy on Website</a></div>
+       <div><a href="https://www.amazon.com/s?k=ancestral+supplements&me=A2GKY43G255N13&ref=nb_sb_noss" target="_blank">Buy on Amazon</a></div>
+       <div><a href="https://www.ergomaxsupplements.com/brands/ancestral-supplements" target="_blank">Buy on Ergomax</a></div>
+   </div>
+  </section>
+
+
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  console.log('scroll-triggered')
+if (window.pageYOffset > sticky) {
+  header.classList.add("sticky");
+} else {
+  header.classList.remove("sticky");
+}
+}
+</script>
+</html>
